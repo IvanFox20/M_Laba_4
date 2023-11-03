@@ -119,7 +119,7 @@ namespace storage
             m = min(m, s->key);
         }
 
-        struct node<T>* last_min;
+        struct node<T>* last_min = nullptr;
         for (struct node<T>* s = this->head; s != nullptr; s = s->next)
         {
             if (s->key == m)
